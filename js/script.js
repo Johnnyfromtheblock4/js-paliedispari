@@ -77,15 +77,23 @@ if (number < 1 || number > 5) {
 
 //generare un numero random tramite funzione compreso tra 1 e 5
 const pcNumber = Math.floor(Math.random() * 5) + 1;
+console.log(`Numero del pc ${pcNumber}`);
 
 //faccio la somma dei due numeri
 //definisco la funzione della somma
-function sum (userNumber, pcNumber) {
-  console.log(`${userNumber + pcNumber}`);
+function sum(num1, num2) {
+  return num1 + num2;
 }
+//calcolo la somma
+const total = sum(number, pcNumber);
+console.log(`Somma: ${total}`);
 
 //controllo se la somma è pari o dispari
-
+if (total % 2) {
+  console.log(`Il numero ${total} è dispari`);
+} else {
+  console.log(`Il numero ${total} è pari`);
+}
 
 //se ho scritto pari ed è pari ho vinto
 //se ho scelto dispari ed è dispari ho vinto
