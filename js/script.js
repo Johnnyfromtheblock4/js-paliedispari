@@ -65,7 +65,7 @@ console.log(`Hai scelto ` + result);
 
 //inserire un numero tra 1 e 5
 //chiedo all'utente di inserire un numero
-let userNumber = prompt(`Inserisci un numero tra 1 e 5`);
+const userNumber = prompt(`Inserisci un numero tra 1 e 5`);
 //converto userNumber in un numero
 let number = parseInt(userNumber);
 //controllo che il numero inserito dall'utente sia valido
@@ -76,9 +76,17 @@ if (number < 1 || number > 5) {
 }
 
 //generare un numero random tramite funzione compreso tra 1 e 5
+const pcNumber = Math.floor(Math.random() * 5) + 1;
 
 //faccio la somma dei due numeri
+//definisco la funzione della somma
+function sum (userNumber, pcNumber) {
+  console.log(`${userNumber + pcNumber}`);
+}
+
 //controllo se la somma è pari o dispari
+
+
 //se ho scritto pari ed è pari ho vinto
 //se ho scelto dispari ed è dispari ho vinto
 //se invece ho inserito pari e la somma è dispari ho perso
