@@ -1,47 +1,48 @@
-// //PALINDROMA
+//PALINDROMA
 
-// //chiedo all'utente di inserire una parola
-// const word = prompt("Inserire una parola");
-// console.log(word);
+//chiedo all'utente di inserire una parola
+const word = prompt("Inserire una parola");
+console.log(word);
 
-// function reversedWord(text) {
-//   //converto la stringa in un array
-//   const palindromeWord = text.split("").reverse().join("");
+function reversedWord(text) {
+  //converto la stringa in un array
+  const palindromeWord = text.split("").reverse().join("");
 
-//   //verifico se la parola è palindroma
-//   if (text === palindromeWord) {
-//     return `La parola "${text}" è palindroma`;
-//   } else {
-//     return `La parola "${text}" NON è palindroma`;
-//   }
-// }
+  //verifico se la parola è palindroma
+  if (text === palindromeWord) {
+    return `La parola "${text}" è palindroma`;
+  } else {
+    return `La parola "${text}" NON è palindroma`;
+  }
+}
 
-// //stampo il risultato
-// console.log(reversedWord(word));
+//stampo il risultato
+console.log(reversedWord(word));
 
-// //chiedo all'utente di inserire una parola
-// const word = prompt("Inserire una parola");
-// console.log(word);
+//FOR PALINDROMA
+//chiedo all'utente di inserire una parola
+const parola = prompt("Inserire una parola");
+console.log(parola);
 
-// function reversedWord(text) {
-//   //definizione variabile
-//   let palindromeWord = ``;
+function reversedParola(text) {
+  //definizione variabile
+  let palindromeParola = ``;
 
-//   //ciclo per invertire parola
-//   for (let i = text.length - 1; i >= 0; i--) {
-//     palindromeWord += text[i];
-//   }
+  //ciclo per invertire parola
+  for (let i = text.length - 1; i >= 0; i--) {
+    palindromeParola += text[i];
+  }
 
-//   //verifico se la parola è palindroma
-//   if (text === palindromeWord) {
-//     return `La parola "${text}" è palindroma`;
-//   } else {
-//     return `La parola "${text}" NON è palindroma`;
-//   }
-// }
+  //verifico se la parola è palindroma
+  if (text === palindromeParola) {
+    return `La parola "${text}" è palindroma`;
+  } else {
+    return `La parola "${text}" NON è palindroma`;
+  }
+}
 
-// //stampo il risultato
-// console.log(reversedWord(word));
+//stampo il risultato
+console.log(reversedParola(parola));
 
 //PARI E DISPARI
 //inserisco o pari o dispari
@@ -61,7 +62,7 @@ if (userChoice === `pari`) {
   result = `Scelta non valida`;
 }
 //stampo il risultato
-console.log(`Hai scelto ` + result);
+console.log(`Hai scelto: ` + result);
 
 //inserire un numero tra 1 e 5
 //chiedo all'utente di inserire un numero
@@ -77,7 +78,7 @@ if (number < 1 || number > 5) {
 
 //generare un numero random tramite funzione compreso tra 1 e 5
 const pcNumber = Math.floor(Math.random() * 5) + 1;
-console.log(`Numero del pc ${pcNumber}`);
+console.log(`Numero del pc: ${pcNumber}`);
 
 //faccio la somma dei due numeri
 //definisco la funzione della somma
@@ -89,17 +90,13 @@ const total = sum(number, pcNumber);
 console.log(`Somma: ${total}`);
 
 //controllo se la somma è pari o dispari
-if (total % 2) {
-  console.log(`Il numero ${total} è dispari`);
+const isEven = total % 2 === 0;
+const outcome = isEven ? `pari` : `dispari`;
+console.log(`La somma è: ${outcome}`);
+
+//calcolo il vincitore
+if (outcome === result) {
+  console.log(`Hai vinto!`);
 } else {
-  console.log(`Il numero ${total} è pari`);
+  console.log(`Ha vinto il computer!`);
 }
-
-//se ho scritto pari ed è pari ho vinto
-//se ho scelto dispari ed è dispari ho vinto
-//se invece ho inserito pari e la somma è dispari ho perso
-//se la ho inserito dispari e la somma è pari ho perso
-
-//fare due funzioni:
-//funzione 1: funzione che genera il numero random
-//funzione 2: funzione che stabilisce se la somma dei due numeri è pari o dispari
