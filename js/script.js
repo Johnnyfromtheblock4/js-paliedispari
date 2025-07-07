@@ -45,13 +45,14 @@
 
 //PARI E DISPARI
 //inserisco o pari o dispari
+//dichiaro le variabili
 let even = `pari`;
 let odd = `dispari`;
-
+//chiedo all'utente di scegliere tra pari o dispari
 let userChoice = prompt(`Scegli tra pari e dispari`);
-
+//definisco il risultato
 let result;
-
+//controllo che il testo inserito dall'utente sia valido
 if (userChoice === `pari`) {
   result = even;
 } else if (userChoice === `dispari`) {
@@ -59,12 +60,23 @@ if (userChoice === `pari`) {
 } else {
   result = `Scelta non valida`;
 }
-
+//stampo il risultato
 console.log(`Hai scelto ` + result);
 
 //inserire un numero tra 1 e 5
+//chiedo all'utente di inserire un numero
+let userNumber = prompt(`Inserisci un numero tra 1 e 5`);
+//converto userNumber in un numero
+let number = parseInt(userNumber);
+//controllo che il numero inserito dall'utente sia valido
+if (number < 1 || number > 5) {
+  console.log(`Errore: inserisci un numero tra 1 e 5`);
+} else {
+  console.log(`Hai inserito il numero: ${number}`);
+}
 
 //generare un numero random tramite funzione compreso tra 1 e 5
+
 //faccio la somma dei due numeri
 //controllo se la somma è pari o dispari
 //se ho scritto pari ed è pari ho vinto
