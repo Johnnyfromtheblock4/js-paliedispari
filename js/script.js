@@ -1,4 +1,4 @@
-// //Palindroma
+// //PALINDROMA
 
 // //chiedo all'utente di inserire una parola
 // const word = prompt("Inserire una parola");
@@ -40,4 +40,21 @@ function reversedWord(text) {
   }
 }
 
+//stampo il risultato
 console.log(reversedWord(word));
+
+//PARI E DISPARI
+//inserisco o pari o dispari
+//inserire un numero tra 1 e 5
+//generare un numero random tramite funzione compreso tra 1 e 5
+//faccio la somma dei due numeri
+//controllo se la somma è pari o dispari
+//se ho scritto pari ed è pari ho vinto 
+//se ho scelto dispari ed è dispari ho vinto 
+//se invece ho inserito pari e la somma è dispari ho perso 
+//se la ho inserito dispari e la somma è pari ho perso
+
+
+//fare due funzioni: 
+//funzione 1: funzione che genera il numero random
+//funzione 2: funzione che stabilisce se la somma dei due numeri è pari o dispari
