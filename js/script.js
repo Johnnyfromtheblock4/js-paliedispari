@@ -45,6 +45,10 @@ console.log(reversedWord(word));
 
 //PARI E DISPARI
 //inserisco o pari o dispari
+let even = `pari`;
+let odd = `dispari`;
+
+let choice = prompt (`Scegli tra pari e dispari`)
 //inserire un numero tra 1 e 5
 //generare un numero random tramite funzione compreso tra 1 e 5
 //faccio la somma dei due numeri
